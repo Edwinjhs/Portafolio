@@ -1,0 +1,89 @@
+.box-background1{
+    background-color: #ffffff98;
+    padding: 20px;
+}
+.box-background{
+    display: flex;
+    flex-flow: row wrap;
+    color: #FFF;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.title-job{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+    margin: 2rem;
+    font-family: 'McLaren', sans-serif;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px 4px 25px 4px;
+    background-color: #00214d ;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: #09090991 7px 5px 6px;
+    align-items: center;
+    text-align: center;
+    
+}
+.card-container:hover{
+    scale: 1.1;
+    background-color: #1e3661;
+}
+.card-container img{
+    width: 170px;
+    cursor: pointer;
+}
+.skills i{
+    padding: 5px;
+    font-size: 20px;
+}
+.fa-html5{
+    color: rgb(241, 68, 0);
+}
+.fa-sass{
+    color: #d12999;
+}
+.fa-python{
+    color: #d6b709;
+}
+.fa-angular{
+    color: rgb(136, 8, 8);
+}
+
+.title-project{
+    margin: 1rem;
+}
+.repo-deploy{
+    display: flex;
+    justify-content: space-between;
+}
+.repo-deploy h4{
+    color: #5172a9;
+    padding: 5px;
+    font-size: 12px;
+}
+.repo-deploy a{
+    color: #5172a9;
+    font-size: 20px;
+}
+.repo-deploy a:hover{
+    color: #000000;
+}
+.description{
+    color: #FFf;
+}
+.description:hover{
+    color: #3654b8;
+}
+
+@media screen and (min-width: 700px){
+    .card-container{
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,128 @@
+.content-header{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.scroll-icon{
+    
+    display: none;
+}
+
+.header-text{
+    padding: 20px;
+    font-size: 14px;
+}
+.title-header h1{
+    font-weight: 600;
+    color: #fff;
+}
+.profile-img{
+    width: 200px;
+    margin: 0;
+}
+.info p{
+    color: #7290c9;
+    font-family: 'McLaren', sans-serif;
+    font-size: 16px;
+
+}
+
+.redes i{
+    color: #5172a9;
+    font-size: 20px;
+    padding: 5px;
+}
+.redes i:hover{
+    color: #7290c9;
+    scale: 1.1;
+}
+.downloadcv{
+    margin-top: 1rem;
+    background-color: #043a6b;
+    border-radius: 10px;
+}
+.downloadcv:hover{
+    background-color: #5172a9;
+    scale: 0.9
+}
+.downloadcv a{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+}
+.downloadcv a:hover{
+    color: #000000;
+    scale: 1.1;
+}
+
+@media screen and (min-width: 700px){
+    .downloadcv{
+        margin: 5rem;
+    }
+
+    .redes i{
+        font-size: 30px;
+    }
+    .scroll-icon{
+        display:block;
+        margin-left: 20px;
+    }
+    .profile-img{
+        width: 250px;
+    }
+    .scroll-icon img{
+        position: absolute;
+        top: 20rem;
+        width: 40px;
+
+    }
+    .content-header{
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 20px;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    .profile-img{
+        width: 400px;
+        margin-right: 2rem;
+    }
+    .header-text{
+        padding: 3rem;
+        font-size: 18px;
+    }
+    .scroll-icon img{
+        top: 24rem;
+        width: 3rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .profile-img{
+        width: 400px;
+        margin-right: 4rem;
+    }
+    .header-text{
+        padding: 3rem;
+        font-size: 22px;
+    }
+    .scroll-icon img{
+        top: 24rem;
+        width: 4rem;
+    }
+    .downloadcv{
+        margin: 9rem;
+        cursor: pointer;
+    }
+    .downloadcv a{
+        font-size: 22px;
+    }
+    .redes i{
+        font-size: 40px;
+        padding: 15px;
+    }
+}

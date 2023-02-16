@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="box-background1">
+    <h1 class="title-job">CONOCE MI TRABAJO</h1>
+    <div class="box-background">
+        
+        {% for project in projects %}
+        <div class="card-container">
+            <img src="{{ project.image.url }}" alt="project.title">
+            <div class="skills">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-angular"></i>
+            </div>
+            <h2 class="title-project"> {{ project.title}} </h2>
+            <div class="repo-deploy">
+                {% if project.url%}
+                <a class="deploy" href="{{ project.url }}" target="_blank"><i class="fa-solid fa-eye"><h4> DEPLOY</h4></i></a>
+                {% endif %}
+                <a class="code"href="{{ project.urlrepo }}" target="_blank"><i class="fa-solid fa-file-code"><h4> REPOSITORIO</h4></i></a>
+            </div>
+            <a href="/" class="description" target="_blank">ver descripción</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

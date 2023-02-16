@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/projects.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/skills.css' %}">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon WORK -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+
+    <!-- {% comment %}@@@@ BOOTSTRAP @@@@{% endcomment %} -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- {% comment %}@@@@@ font-family: 'McLaren', cursive; @@@@{% endcomment %} -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+
+    <!-- {% comment %}@@@@ font-family: 'Maven Pro', sans-serif; @@@@{% endcomment %} -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">     
+
+<body>
+    <nav>
+        {% include 'partials/navbar.html' %}
+    </nav>
+    <header>
+        {% include 'partials/header.html' %}
+    </header>
+    <!-- section Projects -->
+    <section #projects>
+        {% block content %}
+        
+        {% endblock %}
+    </section>
+    <!-- section skills -->
+    <section >
+        {% include 'partials/skills.html' %}
+    </section>
+    <!-- section footer -->
+    <section>
+        {% include 'partials/footer.html' %}
+
+    </section>
+
+</body>
+</html>

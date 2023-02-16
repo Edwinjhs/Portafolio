@@ -1,0 +1,28 @@
+.allbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+.line{
+    display: none;
+
+}
+.redes{
+    padding: 10px;
+    margin: 0 10px;
+}
+.text-name-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#7290c9 ;
+    text-align: center;
+}
+@media screen and (min-width: 1000px){
+    .line{
+        height: 100%;
+        display: block;
+    }
+}

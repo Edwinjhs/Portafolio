@@ -1,0 +1,59 @@
+.bar div .name-eh{
+    margin-left: 10px;
+    transition: all 1s ease-in-out;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+}
+.navbar-toggler-icon {
+    background-color: #7290c9;
+    border-radius: 5px;
+}
+
+.navbar-collapse{
+    margin:5px 20px;
+}
+.nav-link{
+    display: inline-block;
+}
+.navbar a{
+    border-radius: 10px;
+    background: #7290c91c;
+    color: #fff;
+}
+.navbar a:hover{
+    color: #fff;
+}
+
+.bar div .name-eh:hover{
+    transform: scale(1.07,0.7);
+    transition: all 1s ease-out;
+    background-color: #00214d91;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    scale: 1.1;
+    background: #7290c949;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 700px){
+    .bar div .name-eh{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .navbar a{
+        font-size: 24px;
+        margin: 5px;
+        color: #fff;
+
+    }
+    .navbar-nav{
+        margin-right: 30px;
+    }
+
+}
