@@ -9,4 +9,5 @@ body {
     background-image: url("../img/bground.svg");
     background-repeat: repeat;
     background-size: contain;
+    background-attachment: fixed;
 } 
