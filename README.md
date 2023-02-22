@@ -3,7 +3,7 @@
 This is my personal portfolio, built with Django and Python. In this project, I've used a virtual environment (env) to ensure that the required packages and versions are the same on whatever system this code is running on.
 
 
-##Requirements
+## Requirements
 
 Before running this project, make sure you have the following installed:
 
